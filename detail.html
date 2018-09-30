@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="index.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/p5.js/0.6.1/p5.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.2.3/jquery.min.js"></script>
+    <title>交互设计课程作品展</title>
+    <style>
+        .content {
+            margin-top: 52px;
+        }
+
+        .detail {
+            line-height: 26px;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        .member {
+            line-height: 26px;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        .teacher {
+            text-align: right;
+            line-height: 26px;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        .go {
+            background: yellowgreen;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部LOGO -->
+    <div class="top">
+        <div class="left" onclick="menuClick()">
+            <img class="icon" src="images/menu.png" />
+        </div>
+        <div class="center">
+            <div id="logo">
+
+            </div>
+        </div>
+        <div class="right">
+            <a href="index.html"><img class="icon" src="images/home.png" /></a>
+        </div>
+    </div>
+
+    <div id="menu">
+        <a href='index.html' class="item">HOME</a>
+        <div class="item">ABOUT US</div>
+    </div>
+
+    <!-- 正文 -->
+    <div class="content">
+        <div class="head-image">
+            <img style="width:100%;" />
+        </div>
+        <div class="detail">
+
+        </div>
+        <div class="member">
+            <span>小组成员:</span>
+            <span class="names"></span>
+        </div>
+        <div class="teacher">
+            <span>指导老师:</span>
+            <span class="teachers"></span>
+        </div>
+        <a class="go">
+            进入APP
+        </a>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="copyright">
+            Private Cloud by tt
+            <br />
+            湖南师范大学美术学院版权所有
+        </div>
+        <div class="backtop" onclick="document.body.scrollTop = 0">
+            <img src="images/top.png" style="width:32px; height:32px" />
+        </div>
+    </div>
+</body>
+<script src='js/detail.js'>
+
+</script>
+
+</html>

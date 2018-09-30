@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="index.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/p5.js/0.6.1/p5.min.js"></script>
+    <title>Sine 3D</title>
+    <style>
+        body {
+            font-family: Roboto;
+            background: #f7f7f7;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function setup() {
+            createCanvas(window.innerWidth, window.innerHeight, WEBGL);
+            background(32);
+        }
+
+        function draw() {
+            background(32);
+            rotateY(frameCount * 0.01);
+
+            for (var j = 0; j < 5; j++) {
+                push();
+                for (var i = 0; i < 80; i++) {
+                    translate(sin(frameCount * 0.001 + j) * 100, sin(frameCount * 0.001 + j) * 100, i * 0.1);
+                    rotateZ(frameCount * 0.002);
+                    push();
+                    sphere(14, 8, 8);
+                    pop();
+                }
+                pop();
+            }
+        }
+    </script>
+</body>
+
+
+</html>

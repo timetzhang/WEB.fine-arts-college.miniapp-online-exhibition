@@ -1,0 +1,243 @@
+/* 顶部导航 */
+
+body {
+    font-family: Roboto;
+    background: #f7f7f7;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#menu {
+    opacity: 0;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 52px;
+    z-index: 100;
+    background: #f7f7f7;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity width 0.3s linear;
+}
+
+#menu>.item {
+    display: block;
+    line-height: 28px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#menu.show {
+    opacity: 1;
+}
+
+.top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    flex-flow: row;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background: #f7f7f7;
+    z-index: 100;
+}
+
+.top>.left {
+    width: 32px;
+    padding: 10px;
+    border-right: 1px solid #eee;
+}
+
+.top>.center {
+    text-align: center;
+    line-height: 52px;
+    width: calc(100% - 64px);
+    border-right: 1px solid #eee;
+    font-size: 17px;
+}
+
+.top>.center>div {
+    margin: auto;
+}
+
+.top>.center>div>span {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+/* LOGO 动画 */
+
+.top>.center>div.animation>span:nth-child(2) {
+    -webkit-animation: logo 1s linear both;
+    animation: logo 1s linear both;
+}
+
+.top>.center>div.animation>span:nth-child(4) {
+    -webkit-animation: logo 1s linear both;
+    animation: logo 1s linear both;
+}
+
+@-webkit-keyframes logo {
+    0% {
+        width: 60px;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        width: 60px;
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    0% {
+        width: 60px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
+
+.top>.right {
+    width: 32px;
+    padding: 10px;
+}
+
+/* 首页 canvas 动画 */
+
+#defaultCanvas0 {
+    position: absolute;
+    left: 0;
+    top: 52px;
+}
+
+#head-list {
+    padding-top: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+}
+
+#head-list>.title {
+    font-weight: bold;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+#head-list>.details {
+    font-size: 10px;
+    color: #777;
+    line-height: 24px;
+}
+
+#head-list>.time {
+    font-size: 10px;
+    color: #777;
+    line-height: 24px;
+    text-align: right;
+}
+
+#head-list>.author {
+    font-size: 12px;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* 正文内容 */
+
+.content {
+    margin-top: 5px;
+}
+
+/* 作品列表 */
+
+.list-container {
+    flex-flow: row;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.list {
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
+.list img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.list>.info {
+    padding: 10px;
+    background: white;
+}
+
+.list>.info>.title {
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.list>.info>.details {
+    font-size: 10px;
+    color: #777;
+    line-height: 24px;
+}
+
+.list>.info>.time {
+    font-size: 10px;
+    color: #777;
+    line-height: 24px;
+    text-align: right;
+}
+
+.list>.info>.author {
+    font-size: 10px;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* Footer */
+
+.footer {
+    background: white;
+}
+
+.footer>.copyright {
+    padding: 10px 20px;
+    line-height: 35px;
+    border-bottom: 1px solid #eee;
+}
+
+.footer>.backtop {
+    text-align: center;
+}
+
+/* 通用样式 */
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
