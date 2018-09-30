@@ -10,7 +10,21 @@
     <title>交互设计课程作品展</title>
     <style>
         .content {
-            margin-top: 52px;
+            margin-top: 55px;
+        }
+
+        .head-image {
+            position: relative;
+        }
+
+        .click {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.6);
+            text-align: right;
+            padding: 10px;
+            font-size: 12px;
         }
 
         .detail {
@@ -32,15 +46,22 @@
             padding: 10px;
         }
 
+        .button-box {
+            flex-flow: row;
+            flex-direction: row;
+            display: flex;
+        }
+
         .go {
-            background: yellowgreen;
+            background: white;
             text-align: center;
             display: block;
             margin: 20px auto;
-            width: 100px;
+            width: 40%;
             padding: 10px;
             border: 1px solid #eee;
-            border-radius: 10px;
+            border-radius: 15px;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -70,7 +91,20 @@
     <div class="content">
         <div class="head-image">
             <img style="width:100%;" />
+            <div class="click">
+                <img src='images/click.png' style="width:12px; height: 12px; vertical-align: -1px;" /> <span id="click"></span> &nbsp; 
+                <img src='images/like.png' style="width:12px; height: 12px; vertical-align: -1px;" /> <span id="like"></span>
+            </div>
         </div>
+        <div class="button-box">
+            <a class="go" id="like-btn">
+                赞
+            </a>
+            <a class="go" id="goapp">
+                进入APP
+            </a>
+        </div>
+
         <div class="detail">
 
         </div>
@@ -82,9 +116,6 @@
             <span>指导老师:</span>
             <span class="teachers"></span>
         </div>
-        <a class="go">
-            进入APP
-        </a>
     </div>
     <!-- FOOTER -->
     <div class="footer">
@@ -99,6 +130,12 @@
     </div>
 </body>
 <script src='js/detail.js'>
+
+
+
+
+
+
 
 </script>
 

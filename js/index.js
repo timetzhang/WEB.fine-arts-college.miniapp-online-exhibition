@@ -21,19 +21,22 @@ $(function () {
             $.each(data, function (i, item) {
                 html += '<a href="detail.html?id=' + item._id + '" class="list">'
                 html += '<img src="' + item.head_image + '" />'
+                html += '<div class="clicks">'
+                html += '<img src="images/click.png" style="width:9px;height:9px;vertical-align: 3.5px" /> ' + item.clicks
+                html += ' &nbsp;<img src="images/like.png" style="width:9px;height:9px;vertical-align: 3.5px" /> ' + item.likes + '</div>'
                 html += '<div class="info">'
                 html += '<div class="title">'
                 html += item.name
                 html += '</div>'
                 html += '<div class="details">'
                 html += item.brief
-                html += ' </div>'
+                html += ' </div><div class="meta">'
                 html += '<div class="time">'
-                html += item.time
+                html += item.time.substring(item.time.length-4, item.time)
                 html += '</div>'
                 html += '<div class="author">'
                 html += item.teamname
-                html += '</div>'
+                html += '</div></div>'
                 html += '</div>'
                 html += '</a>'
             });
