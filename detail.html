@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="index.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/p5.js/0.6.1/p5.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/1.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+    <script src="js/app.js"></script>
     <title>交互设计课程作品展</title>
     <style>
         .content {
@@ -69,7 +69,7 @@
 <body>
     <!-- 顶部LOGO -->
     <div class="top">
-        <div class="left" onclick="menuClick()">
+        <div class="left" id="menu-btn">
             <img class="icon" src="images/menu.png" />
         </div>
         <div class="center">
@@ -83,8 +83,8 @@
     </div>
 
     <div id="menu">
-        <a href='index.html' class="item">HOME</a>
-        <div class="item">ABOUT US</div>
+        <a href='/oi' class="item">HOME</a>
+        <a href='about.html' class="item">ABOUT US</a>
     </div>
 
     <!-- 正文 -->
@@ -92,7 +92,8 @@
         <div class="head-image">
             <img style="width:100%;" />
             <div class="click">
-                <img src='images/click.png' style="width:12px; height: 12px; vertical-align: -1px;" /> <span id="click"></span> &nbsp; 
+                <img src='images/click.png' style="width:12px; height: 12px; vertical-align: -1px;" /> <span id="click"></span>
+                &nbsp;
                 <img src='images/like.png' style="width:12px; height: 12px; vertical-align: -1px;" /> <span id="like"></span>
             </div>
         </div>
@@ -130,6 +131,14 @@
     </div>
 </body>
 <script src='js/detail.js'>
+
+
+
+
+
+
+
+
 
 
 

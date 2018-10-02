@@ -7,10 +7,6 @@ $(function () {
         }
     });
 
-    $('#menu-btn').click(function () {
-        $('#menu').toggleClass('show');
-    });
-
     $.ajax({
         url: "https://www.zhangtt.cn/oi/getCoursesExhibitionList?pagesize=50&pagenum=0", //json文件位置
         type: "GET", //请求方式为get

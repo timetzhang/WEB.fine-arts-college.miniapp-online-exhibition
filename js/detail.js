@@ -1,11 +1,5 @@
-function menuClick() {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('show');
-}
 
 $(function () {
-    
-    
     var id = window.location.search.substr(window.location.search.indexOf('=') + 1, window.location.search.length);
 
     /**

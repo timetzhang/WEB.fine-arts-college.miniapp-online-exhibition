@@ -26,6 +26,7 @@ a:visited {
     background: #f7f7f7;
     -webkit-transition: opacity 0.3s linear;
     transition: opacity width 0.3s linear;
+    display: none;
 }
 
 #menu>.item {
@@ -38,6 +39,7 @@ a:visited {
 
 #menu.show {
     opacity: 1;
+    display: block;
 }
 
 .top {
