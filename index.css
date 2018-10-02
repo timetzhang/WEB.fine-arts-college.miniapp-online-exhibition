@@ -196,6 +196,7 @@ a:visited {
 
 .list img {
     width: 100%;
+    height: 120px;
     margin-bottom: -5px;
 }
 
@@ -213,6 +214,10 @@ a:visited {
     font-size: 10px;
     color: #777;
     line-height: 24px;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .list>.info>.meta {
