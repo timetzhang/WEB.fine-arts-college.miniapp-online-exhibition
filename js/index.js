@@ -28,7 +28,7 @@ $(function () {
                 html += item.brief
                 html += ' </div><div class="meta">'
                 html += '<div class="time">'
-                html += item.time.substring(item.time.length-4, item.time)
+                html += getTimespan(item.time)
                 html += '</div>'
                 html += '<div class="author">'
                 html += item.teamname
